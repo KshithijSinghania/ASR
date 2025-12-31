@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+asr_env/
+venv/
+
+# Data
+data/
+
+# Gradio cache
+.gradio/
+
+# Jupyter
+.ipynb_checkpoints/
+
+best_model_512.pt
+best_model.pt
+model.pt
+
+# OS
+.DS_Store
+Thumbs.db

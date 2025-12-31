@@ -1,0 +1,24 @@
+# Core
+numpy
+pandas
+tqdm
+matplotlib
+
+# Audio processing
+librosa
+soundfile
+
+# ASR evaluation
+jiwer
+
+# Jupyter
+jupyter
+ipykernel
+
+transformers
+datasets
+accelerate
+sentencepiece
+soundfile
+
+gradio
