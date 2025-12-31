@@ -80,9 +80,9 @@ ASR/
 
 | Metric           | Value                    |
 | ---------------- | ------------------------ |
-| CER (Validation) | \~0.54                   |
+| CER (Validation) | \~0.45                   |
 | WER (Validation) | \~0.90                   |
-| Model            | CNN + BiGRU (512 hidden) |
+| Model            | CNN + BiGRU (256 hidden) |
 
 > Note: Performance improves with longer training and language model decoding.
 
@@ -158,7 +158,7 @@ What happens:
 - Loads dataset
 - Trains model with CTC loss
 - Runs validation after each epoch
-- Saves best model automatically (`best_model_512.pt`)
+- Saves best model automatically (`best_model_gru256.pt`)
 
 ---
 
