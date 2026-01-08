@@ -23,18 +23,13 @@ def extract_logmel(audio_path):
 
 import os
 
-CMVN_MEAN = np.load(
-    os.path.join(
-        os.path.dirname(__file__),
-        "../data/librispeech/mel_mean.npy"
-    )
-)
-CMVN_STD = np.load(
-    os.path.join(
-        os.path.dirname(__file__),
-        "../data/librispeech/mel_std.npy"
-    )
-)
+from pathlib import Path
+
+ASSETS_DIR = Path(__file__).resolve().parent / "assets"
+
+CMVN_MEAN = np.load(ASSETS_DIR / "mel_mean.npy")
+CMVN_STD = np.load(ASSETS_DIR / "mel_std.npy")
+
 
 def extract_logmel_normalized(audio_path):
     log_mel = extract_logmel(audio_path)
